@@ -27,7 +27,7 @@ scipy.io.wavfile.write(str(sys.argv[1])[:-1]+'.wav',
                        np.int16(song/max(np.abs(song))*32767))
 
 
-import pyglet
-song = pyglet.media.load(str(sys.argv[1])[:-1]+'.wav')
-song.play()
-pyglet.app.run()
+#import pyglet
+#song = pyglet.media.load(str(sys.argv[1])[:-1]+'.wav')
+#song.play()
+#pyglet.app.run()
