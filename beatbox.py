@@ -13,14 +13,14 @@ file = open(str(sys.argv[1])+'song.txt')
 
 lines = [line.rstrip('\n') for line in file]
 
-print(lines)
+#print(lines)
 
 song = [scipy.io.wavfile.read(str(sys.argv[1])+'track'+t+'.wav')[1] for t in lines]
 
 song = np.concatenate(song)
 song = np.r_[song]
 
-print(song)
+#print(song)
 
 scipy.io.wavfile.write(str(sys.argv[1])[:-1]+'.wav',
                        44100,
